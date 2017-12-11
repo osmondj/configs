@@ -1,0 +1,28 @@
+[alias]
+	showtool       = "!showci () { rev=${1:-HEAD}; git difftool --dir-diff $rev~1 $rev; }; showci $1"
+	co = checkout
+	ci = commit
+	st = status
+	hist = log -500 --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+
+[user]
+	name = Patryk Osmaczko
+	email = patryk.osmaczko@nokia.com
+
+[help]
+	htmlpath = http://git-scm.com/docs
+[http]
+	#proxy = ip:8080
+[core]
+	preloadindex = true
+	fscache = true
+[gc]
+	auto = 256
+
+[merge]
+        tool = meld
+
+[mergetool "meld"]
+        #path = /cygdrive/c/Program Files (x86)/Meld/Meld.exe
+        path = /cygdrive/c/repo/private/gitdifftoolwrapper/gitdifftoolwrapper.py
+
