@@ -17,6 +17,8 @@ Plugin 'vim-scripts/indentpython.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -102,3 +104,16 @@ EOF
 " Syntax on
 let python_highlight_all=1
 syntax on
+
+" Color scheme deduction
+if has('gui_running')
+  set background=dark
+  colorscheme solarized
+else
+  colorscheme zenburn
+endif
+
+" Solarized also ships with a dark and light theme. Switch between
+" them very by pressing F5"
+call togglebg#map("<F5>")
+
