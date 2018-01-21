@@ -1,3 +1,6 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+              "VUNDLE - plugin manager"
+""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -24,3 +27,20 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+                     "PERSONAL"
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Specify the areas of the screen where the splits should occur
+" :sp <filename> <- horizontal split
+" :vs <filename> <- vertical split
+set splitbelow
+set splitright
+
+" Split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
