@@ -14,6 +14,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
+Bundle 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -75,3 +76,10 @@ au BufNewFile,BufRead *.js, *.html, *.css
 " Flagging unnecessary whitespace
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.cpp,*.h match BadWhitespace /\s\+$/
 
+" UTF8 support
+set encoding=utf-8
+
+" YcmCompleter related
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_python_binary_path = '/usr/bin/python3'
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
