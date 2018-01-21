@@ -83,3 +83,16 @@ set encoding=utf-8
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_python_binary_path = '/usr/bin/python3'
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" Python with virtualenv support
+" This determines if you are running inside a virtualenv, and then switches to
+" that specific virtualenv and sets up your system path so that YouCompleteMe
+" will find the appropriate site packages.
+py3 << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
