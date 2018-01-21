@@ -19,6 +19,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,7 +63,7 @@ set foldlevel=99
 nnoremap <space> za
 
 " Python indentation
-au BufNewFile,BufRead *.py
+au BufNewFile,BufRead *.py:
     \ set tabstop=4
     \ set softtabstop=4
     \ set shiftwidth=4
@@ -72,10 +73,13 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 " Fullstack indentation
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js, *.html, *.css:
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
+
+"define BadWhitespace before using in a match
+highlight BadWhitespace ctermbg=red guibg=darkred
 
 " Flagging unnecessary whitespace
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.cpp,*.h match BadWhitespace /\s\+$/
