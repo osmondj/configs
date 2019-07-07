@@ -95,5 +95,24 @@ bindkey -v
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+#
+function tIn () {
+	cd $1
+	tig
+	cd -
+}
+
+function fa () {
+	find . -iname "*$1*"
+}
+
+function f() {
+	find . -name "$1"
+}
+
 
 #source /home/osmondj/.local/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
+source /usr/share/autojump/autojump.zsh
+
+eval $(thefuck --alias)
