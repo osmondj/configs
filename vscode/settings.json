@@ -1,0 +1,38 @@
+{
+    "window.zoomLevel": 1,
+    "cmake.configureOnOpen": true,
+    "keyboard.dispatch": "keyCode",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "clang-format.executable": "/usr/bin/clang-format-7",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Default Light+",
+    "clang.executable": "/usr/bin/clang-9",
+    "clang.completion.completeMacros": false,
+    "clang.completion.enable": false,
+    "catch2TestExplorer.userId": "267e48ebd8c73760e58674f549d31695e7e4959c",
+    "C_Cpp.updateChannel": "Insiders",
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.formatting": "Disabled",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "clangd.path": "/home/patrykosmaczko/Apps/clangd_10rc3/bin/clangd",
+    "vim.foldfix": true,
+    "vim.camelCaseMotion.enable": true,
+    "vim.leader": " ",
+    "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
+    "vim.highlightedyank.enable": true,
+    "vim.handleKeys": { 
+        "<C-f>": false,
+        "<C-k>": false,
+        "<C-b>": false,
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["tab"],
+            "after": ["leader", "leader", "s"]
+        }
+    ],
+}
