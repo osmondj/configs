@@ -5,10 +5,12 @@
 	hist = log -500 --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	sst = submodule foreach git st -s
 	sstb = submodule foreach git st -s -b
+	sf = submodule foreach git fetch
+	sp = submodule foreach git pull
 
 [user]
 	name = Patryk Osmaczko
-	email = osmaczkopatryk@gmail.com
+	email = patryk.osmaczko@globallogic.com
 
 [help]
 	htmlpath = http://git-scm.com/docs

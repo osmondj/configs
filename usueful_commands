@@ -1,0 +1,5 @@
+git submodule foreach git log --author="\(osmaczko\)\|\(potrzasaj\)" --since="8 weeks old" -S"todo\b" --pickaxe-regex -p | grep -i "todo"
+
+xdotool key Caps_Lock
+
+du -sh * | sort -h

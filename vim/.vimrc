@@ -117,9 +117,14 @@ if has('gui_running')
   colorscheme solarized
 else
   colorscheme zenburn
+  " colorscheme solarized
 endif
 
 " Solarized also ships with a dark and light theme. Switch between
 " them very by pressing F5"
 call togglebg#map("<F5>")
+
+" Search and replace
+" vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
 

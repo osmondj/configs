@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/osmondj/.oh-my-zsh
+  export ZSH=/home/patrykosmaczko/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -68,6 +68,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Key binding
 bindkey -v
+bindkey -s '^[[15~' 'g sst^M' # F5
+bindkey -s '^[[17~' 'g sstb^M' # F6
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -111,6 +113,7 @@ function f() {
 	find . -name "$1"
 }
 
+source /home/patrykosmaczko/esigma/AUZUKAbundle/Fluid/Scripts/bundle_functions.sh 
 
 #source /home/osmondj/.local/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
 source /usr/share/autojump/autojump.zsh
