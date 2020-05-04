@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "cmake.configureOnOpen": true,
     "keyboard.dispatch": "keyCode",
     "[cpp]": {
@@ -7,7 +7,6 @@
     },
     "clang-format.executable": "/usr/bin/clang-format-7",
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Default Light+",
     "clang.executable": "/usr/bin/clang-9",
     "clang.completion.completeMacros": false,
     "clang.completion.enable": false,
@@ -24,19 +23,90 @@
     "vim.useSystemClipboard": true,
     "vim.easymotion": true,
     "vim.highlightedyank.enable": true,
-    "vim.handleKeys": { 
+    "vim.handleKeys": {
         "<C-f>": false,
         "<C-k>": false,
         "<C-b>": false,
+        "<C-j>": false,
+        "<C-t>": false,
     },
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["tab"],
-            "after": ["leader", "leader", "s"]
+            "before": [
+                "tab"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "s"
+            ]
         },
         {
-            "before": [";"],
-            "after": [":"]
+            "before": [
+                ";"
+            ],
+            "after": [
+                ":"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "D"
+            ], // go definition at side
+            "commands": [
+                "editor.action.revealDefinitionAside"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "u"
+            ], // go usages (references)
+            "commands": [
+                "editor.action.goToReferences"
+            ]
+        },
+        {
+            "before": [
+                " ",
+                "r"
+            ],
+            "commands": [
+                "build&run"
+            ],
+        },
+        {
+            "before": [
+                " ",
+                "b"
+            ],
+            "commands": [
+                "build&tests"
+            ],
         }
     ],
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "vim.easymotionMarkerHeight": 18,
+    "vim.easymotionMarkerFontSize": "16",
+    "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
+    "vim.replaceWithRegister": true,
+    "clangd.arguments": [
+        "-cross-file-rename",
+        "-header-insertion=never"
+    ],
+    "catch2TestExplorer.logSentry": "disable_3",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.advanced.repositorySearchDepth": 2,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "workbench.colorTheme": "Default Light+",
+    "bracket-pair-colorizer-2.colors": [
+        "Black",
+        "Orchid",
+        "LightSkyBlue"
+    ],
+    "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+    "cmake.buildBeforeRun": false,
 }
