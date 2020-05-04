@@ -33,6 +33,10 @@
         {
             "before": ["tab"],
             "after": ["leader", "leader", "s"]
+        },
+        {
+            "before": [";"],
+            "after": [":"]
         }
     ],
 }
