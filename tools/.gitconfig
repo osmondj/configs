@@ -15,6 +15,11 @@
 [help]
 	htmlpath = http://git-scm.com/docs
 
-
 [core]
 	pager = less -x1,5
+
+[merge]
+    tool = meld
+
+[diff]
+    tool = meld

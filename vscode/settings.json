@@ -10,7 +10,6 @@
     "clang.executable": "/usr/bin/clang-9",
     "clang.completion.completeMacros": false,
     "clang.completion.enable": false,
-    "catch2TestExplorer.userId": "267e48ebd8c73760e58674f549d31695e7e4959c",
     "C_Cpp.updateChannel": "Insiders",
     "C_Cpp.autocomplete": "Disabled",
     "C_Cpp.formatting": "Disabled",
@@ -31,6 +30,30 @@
         "<C-t>": false,
     },
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "u"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo",
+                    "args": []
+                }
+            ]
+        },
         {
             "before": [
                 "tab"
@@ -69,11 +92,22 @@
         },
         {
             "before": [
+                "g",
+                "p"
+            ], // go usages (references)
+            "commands": [
+                "editor.action.peekDefinition"
+            ]
+        },
+        {
+            "before": [
                 " ",
                 "r"
             ],
             "commands": [
-                "build&run"
+                {
+                    "command": "buildrun",
+                },
             ],
         },
         {
@@ -82,26 +116,35 @@
                 "b"
             ],
             "commands": [
-                "build&tests"
+                "build"
             ],
+        },
+        {
+            "before": [
+                "Enter"
+            ],
+            "after": [
+                "o",
+                "Esc"
+            ]
         }
     ],
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "vim.easymotionMarkerHeight": 18,
-    "vim.easymotionMarkerFontSize": "16",
-    "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
+    "vim.easymotionMarkerHeight": 20,
+    "vim.easymotionMarkerFontSize": "14",
+    "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf[];',./123456789",
     "vim.replaceWithRegister": true,
+    "vim.easymotionMarkerBackgroundColor": "#FFFFCC",
+    "vim.easymotionMarkerForegroundColorOneChar": "#000000",
     "clangd.arguments": [
         "-cross-file-rename",
         "-header-insertion=never"
     ],
-    "catch2TestExplorer.logSentry": "disable_3",
     "gitlens.codeLens.enabled": false,
     "gitlens.advanced.repositorySearchDepth": 2,
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
-    "workbench.colorTheme": "Default Light+",
     "bracket-pair-colorizer-2.colors": [
         "Black",
         "Orchid",
@@ -109,4 +152,16 @@
     ],
     "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
     "cmake.buildBeforeRun": false,
+    "testMate.cpp.log.logSentry": "disable_3",
+    "testMate.cpp.log.userId": "267e48ebd8c73760e58674f549d31695e7e4959c",
+    "vim.debug.loggingLevelForConsole": "verbose",
+    "vim.hlsearch": true,
+    "vim.visualstar": true,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "vim.easymotionMarkerFontFamily": "Fira Code",
+    "vim.easymotionMarkerForegroundColorTwoChar": "#000000",
+    "vim.easymotionMarkerFontWeight": "bold",
+    "vim.easymotionMarkerWidthPerChar": 9,
+    "workbench.colorTheme": "Default Light+",
 }
