@@ -1,79 +1,114 @@
 {
-    "window.zoomLevel": 0,
-    "cmake.configureOnOpen": true,
-    "keyboard.dispatch": "keyCode",
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.formatting": "Disabled",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "C_Cpp.updateChannel": "Insiders",
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "clang-format.executable": "/usr/bin/clang-format-7",
-    "editor.minimap.enabled": false,
-    "C_Cpp.updateChannel": "Insiders",
-    "C_Cpp.autocomplete": "Disabled",
-    "C_Cpp.formatting": "Disabled",
-    "C_Cpp.errorSquiggles": "Disabled",
-    "C_Cpp.intelliSenseEngine": "Disabled",
+    "clangd.arguments": [
+        "-cross-file-rename",
+        "-header-insertion=never"
+    ],
+    "clangd.onConfigChanged": "restart",
     "clangd.path": "/home/patrykosmaczko/Apps/clangd_10rc3/bin/clangd",
-    "vim.foldfix": true,
+    "cmake.buildBeforeRun": false,
+    "cmake.configureOnOpen": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.peekWidgetDefaultFocus": "editor",
+    "editor.renderWhitespace": "all",
+    "editor.stablePeek": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.suggest.showStatusBar": true,
+    "explorer.autoReveal": false,
+    "gitlens.advanced.repositorySearchDepth": 2,
+    "gitlens.codeLens.enabled": false,
+    "keyboard.dispatch": "keyCode",
+    "testMate.cpp.log.logSentry": "disable_3",
+    "testMate.cpp.log.userId": "267e48ebd8c73760e58674f549d31695e7e4959c",
     "vim.camelCaseMotion.enable": true,
-    "vim.leader": " ",
-    "vim.useSystemClipboard": true,
+    "vim.debug.loggingLevelForConsole": "verbose",
     "vim.easymotion": true,
-    "vim.highlightedyank.enable": true,
+    "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf[];',./123456789",
+    "vim.easymotionMarkerBackgroundColor": "#FFFFCC",
+    "vim.easymotionMarkerFontWeight": "bold",
+    "vim.easymotionMarkerForegroundColorOneChar": "#000000",
+    "vim.foldfix": true,
     "vim.handleKeys": {
-        "<C-f>": false,
-        "<C-k>": false,
         "<C-b>": false,
+        "<C-f>": false,
         "<C-j>": false,
-        "<C-t>": false,
+        "<C-k>": false,
+        "<C-t>": false
     },
+    "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "after": [
+                "Esc",
+                "A",
+                ";",
+                "Esc"
+            ],
+            "before": [
+                "<C-e>"
+            ]
+        }
+    ],
+    "vim.leader": " ",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
+            "after": [],
             "before": [
                 "u"
             ],
-            "after": [],
             "commands": [
                 {
-                    "command": "undo",
-                    "args": []
+                    "args": [],
+                    "command": "undo"
                 }
             ]
         },
         {
+            "after": [],
             "before": [
                 "<C-r>"
             ],
-            "after": [],
             "commands": [
                 {
-                    "command": "redo",
-                    "args": []
+                    "args": [],
+                    "command": "redo"
                 }
             ]
         },
         {
-            "before": [
-                "tab"
-            ],
             "after": [
                 "leader",
                 "leader",
                 "s"
+            ],
+            "before": [
+                "tab"
             ]
         },
         {
-            "before": [
-                ";"
-            ],
             "after": [
                 ":"
+            ],
+            "before": [
+                ";"
             ]
         },
         {
             "before": [
                 "g",
                 "D"
-            ], // go definition at side
+            ],
             "commands": [
                 "editor.action.revealDefinitionAside"
             ]
@@ -82,7 +117,7 @@
             "before": [
                 "g",
                 "u"
-            ], // go usages (references)
+            ],
             "commands": [
                 "editor.action.goToReferences"
             ]
@@ -91,7 +126,7 @@
             "before": [
                 "g",
                 "p"
-            ], // go usages (references)
+            ],
             "commands": [
                 "editor.action.peekDefinition"
             ]
@@ -103,9 +138,9 @@
             ],
             "commands": [
                 {
-                    "command": "buildrun",
-                },
-            ],
+                    "command": "buildrun"
+                }
+            ]
         },
         {
             "before": [
@@ -114,59 +149,24 @@
             ],
             "commands": [
                 "build"
-            ],
+            ]
         },
         {
-            "before": [
-                "Enter"
-            ],
             "after": [
                 "o",
                 "Esc"
-            ]
-        },
-    ],
-    "vim.insertModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<C-e>"
             ],
-            "after": [
-                "Esc",
-                "A",
-                ";",
-                "Esc"
+            "before": [
+                "Enter"
             ]
         }
     ],
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf[];',./123456789",
     "vim.replaceWithRegister": true,
-    "vim.easymotionMarkerBackgroundColor": "#FFFFCC",
-    "vim.easymotionMarkerForegroundColorOneChar": "#000000",
-    "clangd.arguments": [
-        "-cross-file-rename",
-        "-header-insertion=never"
-    ],
-    "gitlens.advanced.repositorySearchDepth": 2,
-    "cmake.buildBeforeRun": false,
-    "testMate.cpp.log.logSentry": "disable_3",
-    "testMate.cpp.log.userId": "267e48ebd8c73760e58674f549d31695e7e4959c",
-    "vim.debug.loggingLevelForConsole": "verbose",
-    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
     "vim.visualstar": true,
-    "zenMode.hideLineNumbers": false,
-    "zenMode.hideStatusBar": false,
-    "vim.easymotionMarkerFontWeight": "bold",
-    "editor.renderWhitespace": "all",
-    "workbench.list.keyboardNavigation": "filter",
-    "explorer.autoReveal": false,
-    "gitlens.codeLens.enabled": false,
-    "editor.peekWidgetDefaultFocus": "editor",
-    "editor.suggest.showStatusBar": true,
-    "editor.suggest.insertMode": "replace",
-    "clangd.onConfigChanged": "restart",
-    "editor.stablePeek": true,
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "Default Light+",
+    "workbench.list.keyboardNavigation": "filter",
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false
 }
