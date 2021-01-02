@@ -24,5 +24,33 @@
     {
         "key": "ctrl+shift+-",
         "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+k p",
+        "command": "-workbench.action.files.copyPathOfActiveFile"
+    },
+    {
+        "key": "ctrl+k p",
+        "command": "workbench.action.showEditorsInActiveGroup"
+    },
+    {
+        "key": "shift+tab",
+        "command": "togglePeekWidgetFocus",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "ctrl+k f2",
+        "command": "-togglePeekWidgetFocus",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "ctrl+t f",
+        "command": "-textPowerTools.filterLinesIncludingString",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t g",
+        "command": "-textPowerTools.generateGuid",
+        "when": "editorTextFocus"
     }
 ]

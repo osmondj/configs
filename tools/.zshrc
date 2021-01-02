@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$PATH:/media/patrykosmaczko/Data/Dev/flutter/bin"
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/patrykosmaczko/.oh-my-zsh
@@ -59,7 +60,7 @@ ZSH_THEME="amuse"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git vi-mode
+  git vi-mode git-flow-avh
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -99,6 +100,8 @@ bindkey -s '^[[17~' 'g sstb^M' # F6
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
+alias sprint_work="git submodule foreach git --no-pager log --oneline --author='osmaczko' --since='2 weeks old'"
+
 function tIn () {
 	cd $1
 	tig
@@ -113,7 +116,7 @@ function f() {
 	find . -name "$1"
 }
 
-source /home/patrykosmaczko/esigma/AUZUKAbundle/Fluid/Scripts/bundle_functions.sh 
+source /media/patrykosmaczko/Data/esigma/AUZUKAbundle/Fluid/Scripts/bundle_functions.sh 
 
 #source /home/osmondj/.local/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
 source /usr/share/autojump/autojump.zsh

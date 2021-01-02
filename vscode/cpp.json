@@ -32,5 +32,19 @@
 			"qDebug() << \"DUPSKO\" << $1;"
 		],
 		"description": "qDebug() << DUPSKO"
+	},
+	"AUTO_PROPERTY": {
+		"prefix": "/property",
+		"body": [
+			"AUTO_PROPERTY($1, $2, $2, set${2/(.)/${1:/upcase}/}, $2Changed)"
+		],
+		"description": "qDebug() << DUPSKO"
+	},
+	"AUTO_POINTER_PROPERTY": {
+		"prefix": "/ptr_property",
+		"body": [
+			"AUTO_POINTER_PROPERTY($1, $2, $2)"
+		],
+		"description": "qDebug() << DUPSKO"
 	}
 }

@@ -1,0 +1,8 @@
+set tab-size = 8
+bind main	>		?git push
+bind main	<LessThan>	?git pull --rebase
+bind refs D ?git push origin --delete %(branch)
+bind refs t ?git tag -d %(tag)
+bind refs T ?git push origin --delete %(tag)
+
+

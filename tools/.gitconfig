@@ -23,3 +23,15 @@
 
 [diff]
     tool = meld
+[gitflow "branch"]
+	master = master
+	develop = develop
+[gitflow "prefix"]
+	feature = feature/
+	bugfix = fix/
+	release = release/
+	hotfix = hotfix/
+	support = support/
+	versiontag = 
+[gitflow "path"]
+	hooks = /media/patrykosmaczko/Data/esigma/EsicAppBundle/.git/hooks

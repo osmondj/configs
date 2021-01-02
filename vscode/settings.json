@@ -127,6 +127,19 @@
                 "o",
                 "Esc"
             ]
+        },
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-e>"
+            ],
+            "after": [
+                "Esc",
+                "A",
+                ";",
+                "Esc"
+            ]
         }
     ],
     "editor.fontFamily": "Fira Code",
@@ -141,10 +154,7 @@
         "-cross-file-rename",
         "-header-insertion=never"
     ],
-    "gitlens.codeLens.enabled": false,
     "gitlens.advanced.repositorySearchDepth": 2,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
     "bracket-pair-colorizer-2.colors": [
         "Black",
         "Orchid",
@@ -163,5 +173,14 @@
     "vim.easymotionMarkerForegroundColorTwoChar": "#000000",
     "vim.easymotionMarkerFontWeight": "bold",
     "vim.easymotionMarkerWidthPerChar": 9,
+    "editor.renderWhitespace": "all",
+    "workbench.list.keyboardNavigation": "filter",
+    "explorer.autoReveal": false,
+    "gitlens.codeLens.enabled": false,
+    "editor.peekWidgetDefaultFocus": "editor",
+    "editor.suggest.showStatusBar": true,
+    "editor.suggest.insertMode": "replace",
+    "clangd.onConfigChanged": "restart",
+    "editor.stablePeek": true,
     "workbench.colorTheme": "Default Light+",
 }

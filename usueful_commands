@@ -3,3 +3,6 @@ git submodule foreach git log --author="\(osmaczko\)\|\(potrzasaj\)" --since="8 
 xdotool key Caps_Lock
 
 du -sh * | sort -h
+
+# remove needless branches
+git submodule foreach 'git branch | grep "task/" | xargs git branch -d || :'
