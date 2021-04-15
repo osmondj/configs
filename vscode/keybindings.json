@@ -52,5 +52,10 @@
         "key": "ctrl+t g",
         "command": "-textPowerTools.generateGuid",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t g",
+        "command": "-textPowerTools.generateRandomGuids",
+        "when": "editorTextFocus"
     }
 ]

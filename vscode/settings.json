@@ -5,17 +5,21 @@
     "C_Cpp.intelliSenseEngine": "Disabled",
     "C_Cpp.updateChannel": "Insiders",
     "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
+        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.formatOnSave": true
     },
-    "clang-format.executable": "/usr/bin/clang-format-7",
+    "clang-format.executable": "/home/patrykosmaczko/Apps/clang+llvm-11.0.0-x86_64-linux-gnu-ubuntu-20.04/bin/clang-format",
+    // "clang-format.executable": "/usr/bin/clang-format-7",
     "clangd.arguments": [
         "-cross-file-rename",
         "-header-insertion=never"
     ],
+    "clangd.checkUpdates": true,
     "clangd.onConfigChanged": "restart",
-    "clangd.path": "/home/patrykosmaczko/Apps/clangd_10rc3/bin/clangd",
-    "cmake.buildBeforeRun": false,
+    "clangd.path": "/home/patrykosmaczko/Apps/clangd-linux-11.0.0/clangd_11.0.0/bin/clangd",
+    "cmake.buildBeforeRun": true,
     "cmake.configureOnOpen": true,
+    // "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
@@ -138,7 +142,8 @@
             ],
             "commands": [
                 {
-                    "command": "buildrun"
+                    // "command": "buildrun"
+                    "command": "cmake.launchTarget"
                 }
             ]
         },
@@ -164,9 +169,13 @@
     "vim.replaceWithRegister": true,
     "vim.useSystemClipboard": true,
     "vim.visualstar": true,
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Default Light+",
     "workbench.list.keyboardNavigation": "filter",
     "zenMode.hideLineNumbers": false,
-    "zenMode.hideStatusBar": false
+    "zenMode.hideStatusBar": false,
+    "files.insertFinalNewline": true,
+    "cSpell.userWords": [
+        "Krzyszof",
+        "Patryk"
+    ],
+    "workbench.colorTheme": "Default Light+"
 }
